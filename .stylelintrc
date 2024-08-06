@@ -1,0 +1,36 @@
+{
+  "extends": ["@stylistic/stylelint-config"],
+  "ignoreFiles": ["*/coverage/lcov-report/*"],
+  "plugins": ["stylelint-use-logical", "@stylistic/stylelint-plugin"],
+  "rules": {
+    "function-disallowed-list": [],
+    "alpha-value-notation": "percentage",
+    "@stylistic/string-quotes": "single",
+    "csstools/use-logical": [
+      "always",
+      {
+        "except": [
+          "height",
+          "width",
+          "min-height",
+          "min-width",
+          "max-height",
+          "max-width",
+          "top",
+          "bottom",
+          "margin-top",
+          "margin-bottom",
+          "padding-top",
+          "padding-bottom",
+          "border-top",
+          "border-bottom"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "color-named": "never"
+  },
+  "overrides": [
+
+  ]
+}
